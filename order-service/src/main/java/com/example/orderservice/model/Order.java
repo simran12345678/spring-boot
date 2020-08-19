@@ -9,16 +9,13 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "ORDER_TB")
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@Data
 public class Order {
     @Id
-    @GeneratedValue
     private int id;
     private String name;
     private double price;
     private int qty;
+
 
 }

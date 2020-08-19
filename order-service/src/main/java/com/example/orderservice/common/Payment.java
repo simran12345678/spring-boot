@@ -1,12 +1,8 @@
 package com.example.orderservice.common;
 
-import lombok.*;
+import lombok.Data;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
 public class Payment {
 
     private int paymentId;
@@ -14,10 +10,5 @@ public class Payment {
     private String transactionId;
     private int orderId;
     private double amount;
-
-
-
-
-
 
 }

@@ -1,7 +1,8 @@
 package com.example.paymentservice.model;
 
-import lombok.*;
-
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -10,10 +11,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name="PAYMENT_TB")
 @Data
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
 public class Payment {
 
     @Id
@@ -25,7 +22,4 @@ public class Payment {
     private double amount;
 
 
-
-    public Payment() {
-    }
 }
